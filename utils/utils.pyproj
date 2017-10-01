@@ -3,20 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>40292e9f-267b-4487-9beb-6dd34db6984c</ProjectGuid>
+    <ProjectGuid>97966164-a394-4491-945e-76493b54e73c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>usi.py</StartupFile>
+    <StartupFile>filter_csa_in_dir.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>dlshogi_basic</Name>
-    <RootNamespace>dlshogi_basic</RootNamespace>
-    <IsWindowsApplication>False</IsWindowsApplication>
-    <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>
-    </CommandLineArguments>
-    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <Name>utils</Name>
+    <RootNamespace>utils</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,17 +22,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="common.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="features.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="policy_network.py" />
-    <Compile Include="train_sl_policy.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="usi.py">
+    <Compile Include="filter_csa_in_dir.py" />
+    <Compile Include="log_to_graph.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

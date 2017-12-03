@@ -36,7 +36,7 @@ def main():
 
         if cmd[0] == 'usi':
             print('id name dlshogi_basic')
-            print('option name modelfile type string')
+            print('option name modelfile type string default ' + modelfile)
             print('usiok')
         elif cmd[0] == 'setoption':
             option = cmd[1].split(' ')
